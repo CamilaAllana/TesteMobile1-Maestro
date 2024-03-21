@@ -1,0 +1,27 @@
+# Identificar a App
+appId: org.wikipedia
+---
+
+# Limpar o cache da App
+- clearState
+
+# Iniciar a App
+- launchApp
+
+# Interagir com a App - Clicar em Continue 
+- tapOn: Continue
+- tapOn: Continue
+- tapOn: Continue
+- tapOn: Get Started
+
+# Clicar em Today on Wikipedia
+- scrollUntilVisible:
+    element:
+     id: "org.wikipedia:id/footerActionButton"      
+    centerElement: true 
+
+- tapOn:
+    id: "org.wikipedia:id/footerActionButton"
+
+# Screenshot
+- takeScreenshot: MainScreen      
